@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Home Page</h1>
+<a href="{% url 'about' %}">Go To About</a>
+{% include 'includes/card.html' with title="FIrst Card" %}
+{% include 'includes/card.html' with title="Second Card" %}
+{% endblock content %}
+    
